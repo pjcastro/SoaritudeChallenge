@@ -1,0 +1,74 @@
+<template>
+    <div class="container">
+        <div class="head">
+            <div class="slds-float_left head_logo">
+                <img src={staticResourceLogo} style="height:50px;">
+            </div>
+            <div class="slds-float_right head_menu">
+                <lightning-button-icon 
+                    icon-name="utility:rows" 
+                    variant="border" 
+                    alternative-text="Menu" 
+                    title="Menu" 
+                    size="medium"
+                    onclick={toggleMenu}>
+                    <label>Menu</label>
+                </lightning-button-icon>
+            </div>
+        </div>
+        <div class="body clearfix">
+            <div class="slds-float_left body_content">
+                <c-soaritude-custom-card 
+                    icon-name="utility:rows" 
+                    card-title="Home" 
+                    card-text="Lorem ipsum dolor sit amet consectetur">
+                </c-soaritude-custom-card>
+                <c-soaritude-custom-card 
+                    icon-name="utility:setup" 
+                    card-title="Product" 
+                    card-text="Lorem ipsum dolor sit amet consectetur">
+                </c-soaritude-custom-card>
+                <c-soaritude-custom-card 
+                    icon-name="utility:setup" 
+                    card-title="Product" 
+                    card-text="Lorem ipsum dolor sit amet consectetur">
+                </c-soaritude-custom-card>
+                <c-soaritude-custom-card 
+                    icon-name="utility:user" 
+                    card-title="About" 
+                    card-text="Lorem ipsum dolor sit amet consectetur">
+                </c-soaritude-custom-card>
+                <c-soaritude-custom-card 
+                    icon-name="utility:anywhere_chat" 
+                    card-title="Contact Us" 
+                    card-text="Lorem ipsum dolor sit amet consectetur">
+                </c-soaritude-custom-card>
+            </div>
+            <template if:true={showMenu}>
+                <div class="slds-float_right body_menu">
+                    <c-soaritude-user-menu user-name={userData.Name} user-position={userData.Title}></c-soaritude-user-menu>
+                </div>
+            </template>
+        </div>
+        <div class="foot clearfix">
+            <div class="slds-float_left foot_panel">
+                <div class="foot_title">
+                    Didn't found what you were looking for?
+                </div>
+                <div class="foot_text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himaneos.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himaneos.
+                    </p>
+                </div>
+            </div>
+            <div class="slds-float_right foot_image">
+                <img src={staticResourceFooter} style="height:396px;">
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,57 @@
+<template>
+    <div class="menu_body">
+        <div class="menu_header">
+            <div class="slds-float_left menu_avatar">
+                <div class="slds-float_left">
+                    <lightning-avatar src="https://www.lightningdesignsystem.com/assets/images/avatar2.jpg"></lightning-avatar>
+                </div>
+                <div class="slds-float_left">
+                    <h1>{userName}</h1>
+                    <p>{userPosition}</p>
+                </div>
+            </div>
+            <div class="slds-float_right menu_logout_button">
+                <div class="slds-float_left menu_logout_icon">
+                    <lightning-button-icon icon-name="utility:logout" variant="bare" alternative-text="Menu" title="Menu" size="small">
+                        <label>Logout</label>
+                    </lightning-button-icon>
+                </div>
+                <div class="slds-float_left">
+                    <h1>Log Out</h1>
+                </div>
+            </div>
+        </div>
+        <div class="menu_options">
+            <div class="menu_item slds-float_left">
+                <div class="menu_icon slds-float_left">
+                    <lightning-icon icon-name="utility:people" size="small"></lightning-icon>
+                </div>
+                <div class="menu_text slds-float_left">User Settings</div>
+            </div>
+            <div class="menu_item slds-float_left">
+                <div class="menu_icon slds-float_left">
+                    <lightning-icon icon-name="utility:settings" size="small"></lightning-icon>
+                </div>
+                <div class="menu_text slds-float_left">Account Settings</div>
+            </div>
+            <div class="menu_item slds-float_left">
+                <div class="menu_icon slds-float_left">
+                    <lightning-icon icon-name="utility:help" size="small"></lightning-icon>
+                </div>
+                <div class="menu_text slds-float_left">Help Center</div>
+            </div>
+            <div class="menu_item slds-float_left">
+                <div class="menu_icon slds-float_left">
+                    <lightning-icon icon-name="utility:copy_to_clipboard" size="small"></lightning-icon>
+                </div>
+                <div class="menu_text slds-float_left">Terms &amp; Privacy</div>
+            </div>
+            <div class="menu_item slds-float_left">
+                <div class="menu_icon slds-float_left">
+                    <lightning-icon icon-name="utility:listen" size="small"></lightning-icon>
+                </div>
+                <div class="menu_text slds-float_left">Feedback</div>
+            </div>
+        </div>
+    </div>
+</template>
